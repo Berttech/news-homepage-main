@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+  <link href="/dist/output.css" rel="stylesheet">
   <title>Frontend Mentor | News homepage</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -14,47 +14,66 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
+<body class="font-body text-base">
 
-  Home
-  New
-  Popular
-  Trending
-  Categories
+  <header>
+    <img src="/assets/images/logo.svg" alt="logo" />
+    <ul class="">
+      <li class="text-dark-grayish-blue">Home</li>
+      <li class="text-dark-grayish-blue">New</li>
+      <li class="text-dark-grayish-blue">Popular</li>
+      <li class="text-dark-grayish-blue">Trending</li>
+      <li class="text-dark-grayish-blue">Categories</li>
+    </ul>    
+  </header>
 
-  The Bright Future of Web 3.0?
+  <h1 class="text-very-dark-blue font-extrabold">The Bright Future of Web 3.0?</h1>
 
-  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-  But is it really fulfilling its promise?
+  <p class="text-dark-grayish-blue">
+    We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?  
+  </p> 
 
-  Read more
+  <button class="bg-soft-red p-4 text-off-white">Read more</button>
 
-  New 
-
-  Hydrogen VS Electric Cars
-  Will hydrogen-fueled cars ever catch up to EVs?
-
-  The Downsides of AI Artistry
-  What are the possible adverse effects of on-demand AI image generation?
-
-  Is VC Funding Drying Up?
-  Private funding by VC firms is down 50% YOY. We take a look at what that means.
-
-  01
-  Reviving Retro PCs
-  What happens when old PCs are given modern upgrades?
-
-  02
-  Top 10 Laptops of 2022
-  Our best picks for various needs and budgets.
-
-  03
-  The Growth of Gaming
-  How the pandemic has sparked fresh opportunities.
+  <div class="bg-very-dark-blue col">
+    <h2 class="text-soft-orange">New</h2>
+    <section>
+      <h3 class="text-off-white font-bold">Hydrogen VS Electric Cars</h3>
+      <p class="text-grayish-blue">Will hydrogen-fueled cars ever catch up to EVs?</p>
+    </section>
+    <section>
+      <h3 class="text-off-white font-bold">The Downsides of AI Artistry</h3>
+      <p class="text-grayish-blue">What are the possible adverse effects of on-demand AI image generation?</p>
+    </section>
+    <section>
+      <h3 class="text-off-white">Is VC Funding Drying Up?</h3>
+      <p class="text-grayish-blue">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+    </section>
+  </div>    
+  <div>
+    <section>
+      <img src="/assets/images/image-retro-pcs.jpg" alt="" />
+      <h2 class="text-grayish-blue font-bold">01</h2>
+      <h3 class="text-very-dark-blue">Reviving Retro PCs</h3>
+      <p class="text-dark-grayish-blue">What happens when old PCs are given modern upgrades?</p>
+    </section>
+    <section>
+      <img src="/assets/images/image-top-laptops.jpg" alt="" />
+      <h2 class="text-grayish-blue font-bold">02</h2>
+      <h3 class="text-very-dark-blue">Top 10 Laptops of 2022</h3>
+      <p class="text-dark-grayish-blue">Our best picks for various needs and budgets.</p>
+    </section>
+    <section>
+      <img src="/assets/images/image-gaming-growth.jpg" alt="" />
+      <h2 class="text-grayish-blue font-bold">03</h2>
+      <h3 class="text-very-dark-blue">The Growth of Gaming</h3>
+      <p class="text-dark-grayish-blue">How the pandemic has sparked fresh opportunities.</p>
+    </section>
+  </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Albert Perry</a>.
   </div>
 </body>
 </html>

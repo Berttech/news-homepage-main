@@ -1,0 +1,18 @@
+{
+  "name": "news-homepage-main",
+  "version": "0.0.1",
+  "description": "![Design preview for the News homepage coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./index.js",
+    "build": "npx tailwindcss -i ./input.css -o ./dist/output.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20",
+    "tailwindcss": "^3.2.4"
+  }
+}
