@@ -2,7 +2,24 @@
 module.exports = {
   content: ["./**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      spacing: {
+        100: '100px',
+      },
+      gap: {
+        '7.5': '1.875rem'
+      },
+      lineHeight: {
+        relaxed: '1.73',
+      },
+      margin: {
+        '7.5': '1.875rem',
+        '22': '5.5rem',
+      },
+      padding: {
+        '7.5': '1.875rem'
+      }
+    },
     colors: {
       'soft-orange': 'hsl(35, 77%, 62%)',
       'soft-red': 'hsl(5, 85%, 63%)',
@@ -15,7 +32,21 @@ module.exports = {
       'body': ['Inter'],
     },
     fontSize: {
-      base: '15px'
+      sm: '0.875rem',
+      base: '0.938rem',
+      lg: '1.125rem',
+      xl: '1.25rem',
+      '2xl': '2rem',
+      '3xl': '2.5rem',
+      '4xl': '3.5rem'
+    },
+    letterSpacing: {
+      normal: 0,
+      widest: '0.274rem'
+    },
+    container: {
+      center: true,
+      padding: '13.313rem',
     }
   },
   plugins: [],
