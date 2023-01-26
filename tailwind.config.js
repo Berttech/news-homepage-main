@@ -3,6 +3,10 @@ module.exports = {
   content: ["./**/*.{html,js}"],
   theme: {
     extend: {
+      screens: {
+        '1.5xl': '1440px',
+        phone: {max: '500px'}
+      },
       spacing: {
         100: '100px',
       },
@@ -17,7 +21,8 @@ module.exports = {
         '22': '5.5rem',
       },
       padding: {
-        '7.5': '1.875rem'
+        '7.5': '1.875rem',
+        container: '13.313rem',
       }
     },
     colors: {
@@ -46,7 +51,7 @@ module.exports = {
     },
     container: {
       center: true,
-      padding: '13.313rem',
+
     }
   },
   plugins: [],

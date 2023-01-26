@@ -16,28 +16,41 @@
 </head>
 <body class="font-body text-base">
 
-  <div class="container grid grid-cols-3 gap-7.5 my-22">
-    <header class="col-span-3 flex justify-between content-center flex-wrap">
+  <div class="container grid grid-cols-1 lg:grid-cols-3 lg:gap-7.5 gap-0 my-22 phone:p-4 1.5xl:px-container">
+    <header class="col-span-1 lg:col-span-3 flex justify-between content-center flex-wrap">
       <div class="">
         <img src="/assets/images/logo.svg" alt="logo" />
       </div>
-      <div class="w-md ">
+      <div class="w-md phone:hidden ">
         <ul class="flex justify-between content-center flex-wrap h-full">
           <li class="text-dark-grayish-blue leading-relaxed">Home</li>
           <li class="text-dark-grayish-blue leading-relaxed ml-10">New</li>
           <li class="text-dark-grayish-blue leading-relaxed ml-10">Popular</li>
           <li class="text-dark-grayish-blue leading-relaxed ml-10">Trending</li>
           <li class="text-dark-grayish-blue leading-relaxed ml-10">Categories</li>
-        </ul>    
+        </ul>
       </div>
+      <button class="phone:block hidden">
+        <img src="/assets/images/icon-menu.svg" alt="menu" />
+      </button>
     </header>
-    <div class="col-span-2">
+    <div class="col-span-1 phone:mt-8 lg:col-span-2">
       <picture>
         <source srcset="/assets/images/image-web-3-desktop.jpg" media="(min-width: 500px)" />
         <img srcset="/assets/images/image-web-3-mobile.jpg" />
       </picture>
     </div>
-    <div class="bg-very-dark-blue col-span-1 p-6 row-span-2">
+
+    <div class="col-span-1 phone:mt-6">
+      <h1 class="text-very-dark-blue font-extrabold text-4xl col-span-1 leading-none pr-3">The Bright Future of Web 3.0?</h1>
+    </div>
+    <div class="col-span-1 phone:mt-4">
+      <p class="text-dark-grayish-blue leading-7">
+        We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?
+      </p>
+      <button class="bg-soft-red py-3 px-8 text-off-white uppercase tracking-widest text-sm font-bold leading-relaxed phone:mt-6 mt-7.5">Read more</button>
+    </div>
+    <div class="bg-very-dark-blue col-span-1 lg:row-start-2 lg:col-start-3 p-6 row-span-2 phone:my-16">
       <h2 class="text-soft-orange text-3xl leading-none mb-1">New</h2>
       <section class="py-7.5">
         <h3 class="text-off-white font-bold text-xl leading-6 mb-2">Hydrogen VS Electric Cars</h3>
@@ -51,43 +64,31 @@
         <h3 class="text-off-white font-bold text-xl leading-6 mb-2">Is VC Funding Drying Up?</h3>
         <p class="text-grayish-blue leading-relaxed">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
       </section>
-    </div>    
-    <div class="col-span-1 ">
-      <h1 class="text-very-dark-blue font-extrabold text-4xl col-span-1 leading-none pr-3">The Bright Future of Web 3.0?</h1>
-    </div>
-    <div class="col-span-1">
-      
-      <p class="text-dark-grayish-blue leading-7">
-        We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?  
-      </p> 
-
-      <button class="bg-soft-red py-3 px-8 text-off-white uppercase tracking-widest text-sm font-bold leading-relaxed mt-7.5">Read more</button>
     </div>
 
-    
       <section class="col-span-1">
         <img class="w-100 float-left mr-6" src="/assets/images/image-retro-pcs.jpg" alt="" />
         <h2 class="text-grayish-blue font-bold text-2xl mb-3 leading-none">01</h2>
         <h3 class="text-very-dark-blue font-bold text-lg m-2">Reviving Retro PCs</h3>
         <p class="text-dark-grayish-blue leading-relaxed">What happens when old PCs are given modern upgrades?</p>
       </section>
-      <section class="col-span-1">
+      <section class="col-span-1 phone:mt-8">
         <img class="w-100 float-left mr-6" src="/assets/images/image-top-laptops.jpg" alt="" />
         <h2 class="text-grayish-blue font-bold text-2xl mb-3 leading-none">02</h2>
         <h3 class="text-very-dark-blue font-bold text-lg m-2">Top 10 Laptops of 2022</h3>
         <p class="text-dark-grayish-blue leading-relaxed">Our best picks for various needs and budgets.</p>
       </section>
-      <section class="col-span-1">
+      <section class="col-span-1 phone:mt-8">
         <img class="w-100 float-left mr-6" src="/assets/images/image-gaming-growth.jpg" alt="" />
         <h2 class="text-grayish-blue font-bold text-2xl mb-3 leading-none">03</h2>
         <h3 class="text-very-dark-blue font-bold text-lg m-2">The Growth of Gaming</h3>
         <p class="text-dark-grayish-blue leading-relaxed">How the pandemic has sparked fresh opportunities.</p>
       </section>
-    
+
   </div>
-    
+
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Albert Perry</a>.
   </div>
 </body>
