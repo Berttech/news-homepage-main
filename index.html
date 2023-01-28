@@ -14,24 +14,28 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body class="font-body text-base">
-
-  <div class="container grid grid-cols-1 lg:grid-cols-3 lg:gap-7.5 gap-0 my-22 phone:p-4 1.5xl:px-container">
+<body id="app" class="font-body text-base">
+  <div class="container grid grid-cols-1 lg:grid-cols-3 gap-7.5 phone:gap-0 my-22 phone:p-4 1.5xl:px-container px-12">
     <header class="col-span-1 lg:col-span-3 flex justify-between content-center flex-wrap">
       <div class="">
         <img src="/assets/images/logo.svg" alt="logo" />
       </div>
-      <div class="w-md phone:hidden ">
-        <ul class="flex justify-between content-center flex-wrap h-full">
-          <li class="text-dark-grayish-blue leading-relaxed">Home</li>
-          <li class="text-dark-grayish-blue leading-relaxed ml-10">New</li>
-          <li class="text-dark-grayish-blue leading-relaxed ml-10">Popular</li>
-          <li class="text-dark-grayish-blue leading-relaxed ml-10">Trending</li>
-          <li class="text-dark-grayish-blue leading-relaxed ml-10">Categories</li>
+      <div id="mnu_list" class="bg-white z-10 phone:fixed phone:h-full phone:w-full phone:top-0 phone:left-[119px]">
+        <ul class="flex justify-between content-center flex-wrap h-full phone:block phone:mt-36 phone:ml-6">
+          <li class="text-dark-grayish-blue leading-relaxed phone:text-very-dark-blue phone:text-lg phone:leading-6">Home</li>
+          <li class="text-dark-grayish-blue leading-relaxed ml-10 phone:text-very-dark-blue phone:mt-6 phone:text-lg phone:leading-6 phone:ml-0">New</li>
+          <li class="text-dark-grayish-blue leading-relaxed ml-10 phone:text-very-dark-blue phone:mt-6 phone:text-lg phone:leading-6 phone:ml-0">Popular</li>
+          <li class="text-dark-grayish-blue leading-relaxed ml-10 phone:text-very-dark-blue phone:mt-6 phone:text-lg phone:leading-6 phone:ml-0">Trending</li>
+          <li class="text-dark-grayish-blue leading-relaxed ml-10 phone:text-very-dark-blue phone:mt-6 phone:text-lg phone:leading-6 phone:ml-0">Categories</li>
         </ul>
       </div>
-      <button class="phone:block hidden">
-        <img src="/assets/images/icon-menu.svg" alt="menu" />
+      <button id="mnu_btn" class="phone:block hidden relative z-10 bg-white">
+        <div id="mnu_open" class="">
+          <img src="/assets/images/icon-menu.svg" alt="menu open" />
+        </div>
+        <div id="mnu_close" class="absolute top-1 left-1">
+          <img src="/assets/images/icon-menu-close.svg" alt="menu close" />
+        </div>
       </button>
     </header>
     <div class="col-span-1 phone:mt-8 lg:col-span-2">
@@ -40,7 +44,6 @@
         <img srcset="/assets/images/image-web-3-mobile.jpg" />
       </picture>
     </div>
-
     <div class="col-span-1 phone:mt-6">
       <h1 class="text-very-dark-blue font-extrabold text-4xl col-span-1 leading-none pr-3">The Bright Future of Web 3.0?</h1>
     </div>
@@ -65,31 +68,53 @@
         <p class="text-grayish-blue leading-relaxed">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
       </section>
     </div>
-
-      <section class="col-span-1">
-        <img class="w-100 float-left mr-6" src="/assets/images/image-retro-pcs.jpg" alt="" />
-        <h2 class="text-grayish-blue font-bold text-2xl mb-3 leading-none">01</h2>
-        <h3 class="text-very-dark-blue font-bold text-lg m-2">Reviving Retro PCs</h3>
-        <p class="text-dark-grayish-blue leading-relaxed">What happens when old PCs are given modern upgrades?</p>
-      </section>
-      <section class="col-span-1 phone:mt-8">
-        <img class="w-100 float-left mr-6" src="/assets/images/image-top-laptops.jpg" alt="" />
-        <h2 class="text-grayish-blue font-bold text-2xl mb-3 leading-none">02</h2>
-        <h3 class="text-very-dark-blue font-bold text-lg m-2">Top 10 Laptops of 2022</h3>
-        <p class="text-dark-grayish-blue leading-relaxed">Our best picks for various needs and budgets.</p>
-      </section>
-      <section class="col-span-1 phone:mt-8">
-        <img class="w-100 float-left mr-6" src="/assets/images/image-gaming-growth.jpg" alt="" />
-        <h2 class="text-grayish-blue font-bold text-2xl mb-3 leading-none">03</h2>
-        <h3 class="text-very-dark-blue font-bold text-lg m-2">The Growth of Gaming</h3>
-        <p class="text-dark-grayish-blue leading-relaxed">How the pandemic has sparked fresh opportunities.</p>
-      </section>
-
+    <section class="col-span-1">
+      <img class="w-100 float-left mr-6" src="/assets/images/image-retro-pcs.jpg" alt="" />
+      <h2 class="text-grayish-blue font-bold text-2xl mb-3 leading-none">01</h2>
+      <h3 class="text-very-dark-blue font-bold text-lg m-2">Reviving Retro PCs</h3>
+      <p class="text-dark-grayish-blue leading-relaxed">What happens when old PCs are given modern upgrades?</p>
+    </section>
+    <section class="col-span-1 phone:mt-8">
+      <img class="w-100 float-left mr-6" src="/assets/images/image-top-laptops.jpg" alt="" />
+      <h2 class="text-grayish-blue font-bold text-2xl mb-3 leading-none">02</h2>
+      <h3 class="text-very-dark-blue font-bold text-lg m-2">Top 10 Laptops of 2022</h3>
+      <p class="text-dark-grayish-blue leading-relaxed">Our best picks for various needs and budgets.</p>
+    </section>
+    <section class="col-span-1 phone:mt-8">
+      <img class="w-100 float-left mr-6" src="/assets/images/image-gaming-growth.jpg" alt="" />
+      <h2 class="text-grayish-blue font-bold text-2xl mb-3 leading-none">03</h2>
+      <h3 class="text-very-dark-blue font-bold text-lg m-2">The Growth of Gaming</h3>
+      <p class="text-dark-grayish-blue leading-relaxed">How the pandemic has sparked fresh opportunities.</p>
+    </section>
   </div>
-
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Albert Perry</a>.
   </div>
+  <div id="bg_overlay" class="absolute w-full h-full bg-very-dark-blue opacity-50 top-0 hidden"></div>
+
+  <script type="text/javascript">
+    const menuButton = document.getElementById('mnu_btn');
+    const app = document.getElementById('app');
+    const menu = document.getElementById('mnu_list');
+    const bgOverlay = document.getElementById('bg_overlay');
+
+    menuButton.addEventListener('click', () => {
+      const toggle = menuButton.classList.contains('active');
+
+      if (toggle) {
+        menuButton.classList.remove('active');
+        bgOverlay.classList.remove('phone:!block');
+        menu.classList.remove('active');
+        app.classList.remove('phone:!overflow-y-hidden');
+      } else {
+        menuButton.classList.add('active');
+        bgOverlay.classList.add('phone:!block');
+        menu.classList.add('active');
+        app.classList.add('phone:!overflow-y-hidden');
+      }
+    })
+
+  </script>
 </body>
 </html>

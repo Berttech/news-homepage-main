@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       screens: {
         '1.5xl': '1440px',
-        phone: {max: '500px'}
+        phone: {max: '640px'}
       },
       spacing: {
         100: '100px',
@@ -23,15 +23,15 @@ module.exports = {
       padding: {
         '7.5': '1.875rem',
         container: '13.313rem',
-      }
-    },
-    colors: {
-      'soft-orange': 'hsl(35, 77%, 62%)',
-      'soft-red': 'hsl(5, 85%, 63%)',
-      'off-white': 'hsl(36, 100%, 99%)',
-      'grayish-blue': 'hsl(233, 8%, 79%)',
-      'dark-grayish-blue': 'hsl(236, 13%, 42%)',
-      'very-dark-blue': 'hsl(240, 100%, 5%)'
+      },
+      colors: {
+        'soft-orange': 'hsl(35, 77%, 62%)',
+        'soft-red': 'hsl(5, 85%, 63%)',
+        'off-white': 'hsl(36, 100%, 99%)',
+        'grayish-blue': 'hsl(233, 8%, 79%)',
+        'dark-grayish-blue': 'hsl(236, 13%, 42%)',
+        'very-dark-blue': 'hsl(240, 100%, 5%)'
+      },
     },
     fontFamily: {
       'body': ['Inter'],

@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#mnu_open,
+#mnu_close,
+#mnu_list
+{
+  transition: all .35s ease-in-out;
+}
+
+#mnu_btn.active #mnu_open {
+    transform: rotate( 90deg ) scale( 0 );
+    opacity: 0;
+}
+
+#mnu_btn:not(.active) #mnu_close {
+    transform: rotate( -90deg ) scale( 0 );
+    opacity: 0;
+}
+
+@media(max-width: 640px) {
+    #mnu_list:not(.active) {
+        transform: translateX(100%);
+    }
+}
