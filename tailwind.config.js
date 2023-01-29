@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./**/*.{html,js}"],
+  content: ["./*.{html,js}"],
   theme: {
     extend: {
       screens: {
@@ -46,7 +46,7 @@ module.exports = {
       '4xl': '3.5rem'
     },
     letterSpacing: {
-      normal: 0,
+      normal: '0',
       widest: '0.274rem'
     },
     container: {
